@@ -5,28 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74b00f03-81c9-4c92-9db8-743391b83676" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/configuration/MyUserDetailService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/BackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/BackendApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/book/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/entity/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/book/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/book/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/repository/BookRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/book/BookStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/entity/BookStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/book/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/entity/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/book/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/repository/CategoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/borrow/Borrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/entity/Borrow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/borrow/BorrowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/controller/BorrowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/borrow/BorrowRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/repository/BorrowRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/udemy/demo/DemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/com/udemy/demo/DemoApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/repository/UserRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -114,7 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1644189486125</updated>
       <workItem from="1644189487919" duration="1500000" />
-      <workItem from="1644191590503" duration="646000" />
+      <workItem from="1644191590503" duration="2379000" />
     </task>
     <servers />
   </component>
