@@ -1,9 +1,10 @@
-package com.mycompany.sharebook.backend.book;
+package com.mycompany.sharebook.backend.controller;
 
-import com.mycompany.sharebook.backend.borrow.Borrow;
-import com.mycompany.sharebook.backend.borrow.BorrowRepository;
-import com.mycompany.sharebook.backend.user.User;
-import com.mycompany.sharebook.backend.user.UserRepository;
+import com.mycompany.sharebook.backend.entity.*;
+import com.mycompany.sharebook.backend.repository.BookRepository;
+import com.mycompany.sharebook.backend.repository.BorrowRepository;
+import com.mycompany.sharebook.backend.repository.CategoryRepository;
+import com.mycompany.sharebook.backend.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -28,6 +29,10 @@ public class BookController {
     @Autowired
     private BorrowRepository borrowRepository;
 
+    public static Integer getUserConnectedId() {
+        return 1;
+    }
+
     @GetMapping(value = "/books")
     public ResponseEntity listBooks(@RequestParam(required = false) BookStatus status) {
         Integer userConnectedId = this.getUserConnectedId();
@@ -38,10 +43,6 @@ public class BookController {
             books = bookRepository.findByUserIdAndDeletedFalse(userConnectedId);
         }
         return new ResponseEntity(books, HttpStatus.OK);
-    }
-
-    public static Integer getUserConnectedId() {
-        return 1;
     }
 
     @PostMapping(value = "/books")

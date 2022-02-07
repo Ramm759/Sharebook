@@ -1,4 +1,4 @@
-package com.mycompany.sharebook.backend.user;
+package com.mycompany.sharebook.backend.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

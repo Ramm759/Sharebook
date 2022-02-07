@@ -1,11 +1,12 @@
-package com.mycompany.sharebook.backend.borrow;
+package com.mycompany.sharebook.backend.controller;
 
-import com.mycompany.sharebook.backend.book.Book;
-import com.mycompany.sharebook.backend.book.BookController;
-import com.mycompany.sharebook.backend.book.BookRepository;
-import com.mycompany.sharebook.backend.book.BookStatus;
-import com.mycompany.sharebook.backend.user.User;
-import com.mycompany.sharebook.backend.user.UserRepository;
+import com.mycompany.sharebook.backend.entity.Book;
+import com.mycompany.sharebook.backend.entity.BookStatus;
+import com.mycompany.sharebook.backend.entity.Borrow;
+import com.mycompany.sharebook.backend.entity.User;
+import com.mycompany.sharebook.backend.repository.BookRepository;
+import com.mycompany.sharebook.backend.repository.BorrowRepository;
+import com.mycompany.sharebook.backend.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -39,7 +40,7 @@ public class BorrowController {
         Optional<User> borrower = userRepository.findById(userConnectedId);
         Optional<Book> book = bookRepository.findById(Integer.valueOf(bookId));
 
-        if(borrower.isPresent() && book.isPresent() && book.get().getStatus().equals(BookStatus.FREE)) {
+        if (borrower.isPresent() && book.isPresent() && book.get().getStatus().equals(BookStatus.FREE)) {
             Borrow borrow = new Borrow();
             Book bookEntity = book.get();
             borrow.setBook(bookEntity);
@@ -59,7 +60,7 @@ public class BorrowController {
     public ResponseEntity delete(@PathVariable("borrowId") String borrowId) {
 
         Optional<Borrow> borrow = borrowRepository.findById(Integer.valueOf(borrowId));
-        if(borrow.isEmpty()) {
+        if (borrow.isEmpty()) {
             return new ResponseEntity(HttpStatus.BAD_REQUEST);
         }
 

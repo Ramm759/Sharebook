@@ -1,4 +1,4 @@
-package com.mycompany.sharebook.backend.book;
+package com.mycompany.sharebook.backend.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -16,16 +16,16 @@ public class Category {
     public Category() {
     }
 
+    public Category(String label) {
+        this.label = label;
+    }
+
     public int getId() {
         return id;
     }
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public Category(String label) {
-        this.label = label;
     }
 
     public String getLabel() {

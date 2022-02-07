@@ -1,5 +1,7 @@
-package com.mycompany.sharebook.backend.user;
+package com.mycompany.sharebook.backend.controller;
 
+import com.mycompany.sharebook.backend.entity.User;
+import com.mycompany.sharebook.backend.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,11 +19,11 @@ public class UserController {
     UserRepository userRepository;
 
     @PostMapping("/users")
-    public ResponseEntity add(@Valid @RequestBody  User user) {
+    public ResponseEntity add(@Valid @RequestBody User user) {
 
 
         List<User> users = userRepository.findByEmail(user.getEmail());
-        if(!users.isEmpty()) {
+        if (!users.isEmpty()) {
             return new ResponseEntity("User already existing", HttpStatus.BAD_REQUEST);
         }
 

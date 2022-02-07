@@ -1,7 +1,4 @@
-package com.mycompany.sharebook.backend.borrow;
-
-import com.mycompany.sharebook.backend.book.Book;
-import com.mycompany.sharebook.backend.user.User;
+package com.mycompany.sharebook.backend.entity;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -23,9 +20,14 @@ public class Borrow {
     private Book book;
 
     private LocalDate askDate;
+    private LocalDate closeDate;
 
     public LocalDate getAskDate() {
         return askDate;
+    }
+
+    public void setAskDate(LocalDate askDate) {
+        this.askDate = askDate;
     }
 
     public int getId() {
@@ -36,10 +38,6 @@ public class Borrow {
         this.id = id;
     }
 
-    public void setAskDate(LocalDate askDate) {
-        this.askDate = askDate;
-    }
-
     public LocalDate getCloseDate() {
         return closeDate;
     }
@@ -47,9 +45,6 @@ public class Borrow {
     public void setCloseDate(LocalDate closeDate) {
         this.closeDate = closeDate;
     }
-
-    private LocalDate closeDate;
-
 
     public User getBorrower() {
         return borrower;

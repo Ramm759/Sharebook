@@ -4,8 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb928cdd-bc0c-44d6-be82-a0feaee1f9f2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+    <list default="true" id="74b00f03-81c9-4c92-9db8-743391b83676" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/BackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/BackendApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/book/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/entity/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/book/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/book/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/repository/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/book/BookStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/entity/BookStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/book/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/entity/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/book/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/repository/CategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/borrow/Borrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/entity/Borrow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/borrow/BorrowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/controller/BorrowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/borrow/BorrowRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/repository/BorrowRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/udemy/demo/DemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/com/udemy/demo/DemoApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,12 +48,16 @@
     </option>
   </component>
   <component name="ProjectId" id="24kzgXp7yXYGEhxRThps3CCLB0v" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -45,7 +65,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/src/main/java/com/mycompany/sharebook/backend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
@@ -53,7 +76,7 @@
       <recent name="C:\Users\fredg\OneDrive\Documents\Java\Tutos\Udemy\Developpeur Web Full stack\Sharebook\backend\src\main\java\com\mycompany\sharebook\backend" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BackendApplicationTests">
+  <component name="RunManager" selected="Spring Boot.BackendApplication">
     <configuration name="BackendApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="backend" />
       <extension name="coverage">
@@ -85,12 +108,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bb928cdd-bc0c-44d6-be82-a0feaee1f9f2" name="Changes" comment="" />
+      <changelist id="74b00f03-81c9-4c92-9db8-743391b83676" name="Changes" comment="" />
       <created>1644189486125</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1644189486125</updated>
       <workItem from="1644189487919" duration="1500000" />
+      <workItem from="1644191590503" duration="646000" />
     </task>
     <servers />
   </component>
@@ -119,8 +143,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/Sharebook" />
     </ignored-roots>

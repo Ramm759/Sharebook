@@ -1,6 +1,4 @@
-package com.mycompany.sharebook.backend.book;
-
-import com.mycompany.sharebook.backend.user.User;
+package com.mycompany.sharebook.backend.entity;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
