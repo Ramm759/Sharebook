@@ -1,6 +1,9 @@
 package com.myjava.sharebook.book;
 
+import jakarta.validation.constraints.NotBlank;
+
 public class Book {
+    @NotBlank
     private String title;
     private Category category;
     private BookStatus bookStatus;

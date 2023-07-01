@@ -1,5 +1,6 @@
 package com.myjava.sharebook.user;
 
+import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -11,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("users")
 public class UserController {
     @PostMapping
-    public ResponseEntity addUser(@RequestBody User user) {
+    public ResponseEntity addUser(@Valid @RequestBody User user) {
         // TODO : Persist
         return new ResponseEntity<>(HttpStatus.CREATED);
     }

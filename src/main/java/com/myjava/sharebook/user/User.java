@@ -1,9 +1,14 @@
 package com.myjava.sharebook.user;
 
+import jakarta.validation.constraints.Size;
+
 public class User {
+
     private String email;
-    private String firstname;
-    private String lastname;
+    @Size(min = 2, max = 25, message = "Firstname Entre 2 et 25 caracteres SVP")
+    private String firstName;
+    @Size(min = 2, max = 25, message = "Lastname Entre 2 et 25 caracteres SVP")
+    private String lastName;
     private String password;
 
     public String getEmail() {
@@ -14,20 +19,20 @@ public class User {
         this.email = email;
     }
 
-    public String getFirstname() {
-        return firstname;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
+    public void setFirstName(String firstname) {
+        this.firstName = firstname;
     }
 
-    public String getLastname() {
-        return lastname;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
+    public void setLastName(String lastname) {
+        this.lastName = lastname;
     }
 
     public String getPassword() {

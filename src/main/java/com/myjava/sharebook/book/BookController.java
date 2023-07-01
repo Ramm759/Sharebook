@@ -1,5 +1,6 @@
 package com.myjava.sharebook.book;
 
+import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,7 +19,7 @@ public class BookController {
     }
 
     @PostMapping
-    public ResponseEntity addBook(@RequestBody Book book){
+    public ResponseEntity addBook(@Valid @RequestBody Book book){
         // TODO : Persist
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
