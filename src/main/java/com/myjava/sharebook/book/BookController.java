@@ -35,8 +35,10 @@ public class BookController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-
-
-
+    @GetMapping
+    public ResponseEntity listCategories() {
+        Category category = new Category("Thriller");
+        return new ResponseEntity(List.of(category), HttpStatus.OK);
+    }
 
 }
