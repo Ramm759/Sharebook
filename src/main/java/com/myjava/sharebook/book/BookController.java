@@ -18,7 +18,7 @@ public class BookController {
     }
 
     @PostMapping
-    public ResponseEntity addBook(Book book){
+    public ResponseEntity addBook(@RequestBody Book book){
         // TODO : Persist
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
@@ -30,12 +30,12 @@ public class BookController {
     }
 
     @PutMapping(value = "/{bookId}")
-    public ResponseEntity updateBook(@PathVariable("bookId") String bookId, Book book){
+    public ResponseEntity updateBook(@PathVariable("bookId") String bookId, @RequestBody Book book){
         // TODO : Persist
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-    @GetMapping("categories")
+    @GetMapping("/categories")
     public ResponseEntity listCategories() {
        Category category = new Category("Thriller");
         return new ResponseEntity(List.of(category), HttpStatus.OK);

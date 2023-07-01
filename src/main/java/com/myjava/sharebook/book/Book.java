@@ -3,6 +3,7 @@ package com.myjava.sharebook.book;
 public class Book {
     private String title;
     private Category category;
+    private BookStatus bookStatus;
 
     public String getTitle() {
         return title;
@@ -18,5 +19,13 @@ public class Book {
 
     public void setCategory(Category category) {
         this.category = category;
+    }
+
+    public BookStatus getBookStatus() {
+        return bookStatus;
+    }
+
+    public void setBookStatus(BookStatus bookStatus) {
+        this.bookStatus = bookStatus;
     }
 }
