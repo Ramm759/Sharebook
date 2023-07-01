@@ -2,13 +2,27 @@ package com.myjava.sharebook.borrow;
 
 import com.myjava.sharebook.book.Book;
 import com.myjava.sharebook.user.User;
+import jakarta.persistence.*;
 
 import java.time.LocalDate;
 
+
+@Entity
 public class Borrow {
-    private User borrower; // emprunteur
-    private User lender; // preteur
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
+    @ManyToOne
+    private User borrower;
+
+    @ManyToOne
+    private User lender;
+
+    @ManyToOne
     private Book book;
+
     private LocalDate askDate;
     private LocalDate closeDate;
 
