@@ -9,7 +9,7 @@ import java.util.List;
 @RestController
 @RequestMapping("books")
 public class BookController {
-    @GetMapping(value = "")
+    @GetMapping
     public ResponseEntity listBooks() {
         Book myBook = new Book();
         myBook.setTitle("toto");
@@ -34,6 +34,8 @@ public class BookController {
         // TODO : Persist
         return new ResponseEntity<>(HttpStatus.OK);
     }
+
+
 
 
 
